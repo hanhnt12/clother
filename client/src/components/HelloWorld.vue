@@ -1,5 +1,6 @@
 <template>
   <div class="hello">
+    <language></language>
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
     <ul>
@@ -8,7 +9,7 @@
           href="https://vuejs.org"
           target="_blank"
         >
-          Core Docs
+          {{ $t("hello123") }}
         </a>
       </li>
       <li>
@@ -16,7 +17,7 @@
           href="https://forum.vuejs.org"
           target="_blank"
         >
-          Forum
+          {{ $t("obj.prop1") }}
         </a>
       </li>
       <li>
@@ -84,8 +85,12 @@
 </template>
 
 <script>
+import Language from '@/components/Language'
 export default {
   name: 'HelloWorld',
+  components: {
+    Language
+  },
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'

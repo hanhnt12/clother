@@ -1,0 +1,8 @@
+{
+  "hello123" : "Xin chào tôi",
+  "bye123" : "Tạm biệt",
+  "car" : "Oto",
+  "obj": {
+    "prop1": "Tui đây"
+  }
+}

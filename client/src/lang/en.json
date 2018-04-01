@@ -1,0 +1,20 @@
+{
+  "common": {
+    "button": {
+      "login": "Login",
+      "register": "Register"
+    },
+    "user": {
+      "usernamePlaceholder": "Enter your username",
+      "passwordPlaceholder": "Enter your password"
+    }
+  },
+  "api": {
+    "users": {
+      "registerTitle": "Register Account",
+      "username": "Username",
+      "password": "Password",
+      "rePassword": "Re-Password"
+    }
+  }
+}
