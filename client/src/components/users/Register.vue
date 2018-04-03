@@ -7,7 +7,7 @@
           p.control.has-icons-left.has-icons-right
             input.input(type="text"
               v-model="username"
-              :placeholder="$t('common.user.usernamePlaceholder')" 
+              :placeholder="$t('common.user.usernamePlaceholder')"
               autocomplete="off")
             span.icon.is-small.is-left
               i.fas.fa-user
@@ -25,25 +25,25 @@
 </template>
 
 <script>
-import AuthenticationService from '@/services/AuthenticationServices'
+import AuthenticationService from '@/services/AuthenticationServices';
 export default {
   name: 'Register',
-  data () {
+  data() {
     return {
       username: '',
       password: ''
-    }
+    };
   },
   methods: {
-    async register () {
+    async register() {
       const response = await AuthenticationService.register({
         username: this.username,
         password: this.password
-      })
-      alert(response.data.message)
+      });
+      alert(response.data.message);
     }
   }
-}
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
