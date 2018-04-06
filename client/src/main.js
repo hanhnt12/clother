@@ -5,6 +5,7 @@ import App from './App'
 import router from './router'
 import i18n from './lang/lang'
 import store from './store'
+require('./assets/scss/main.scss')
 
 Vue.config.productionTip = false
 
